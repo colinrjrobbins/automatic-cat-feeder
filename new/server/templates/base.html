@@ -1,0 +1,29 @@
+<<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Automatic Cat Feeder</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets/main_style.css">
+        <link rel="stylesheet" href="../assets/login.css">
+        <link rel="stylesheet" href="../assets/dashboard.css"
+    </head>
+    <body>
+        <div class="nav">
+            <a href="{{ url_for('main.dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('auth.login') }}">Login</a>
+            <a href="{{ url_for('auth.logout') }}">Logout</a>
+        </div>
+        <div class="main-body">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
