@@ -1,0 +1,104 @@
+.boxes{
+    width: 500px;
+    height: 800px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+.boxes input{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 200px
+}
+
+.waterLevel, .foodLevel{
+    background-color: yellow; /* Green */
+    border: black;
+    color: black;
+    padding: 50px 8px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: black;
+    display: inline-block;
+    font-size: 24px;
+    text-shadow: black;
+    box-shadow: 2.5px 4px;
+  }
+
+  .catName{
+    background-color: yellow; /* Green */
+    border: none;
+    color: black;
+    padding: 50px 8px;
+    text-align: center; 
+    font-weight: bold;
+    text-decoration: black;
+    display: inline-block;
+    font-size: 24px;
+    text-shadow: black;
+    display: inline-block;
+    margin-top: 90px;
+    margin-right: 70px;
+    box-shadow: 2.5px 4px;
+  }
+
+  .Time{
+    background-color: yellow; /* Green */
+    border: none;
+    color: black;
+    padding: 50px 8px;
+    font-weight: bold;
+    text-decoration: black;
+    display: inline-block;
+    font-size: 24px;
+    text-shadow: black;
+    display: inline-block;
+    box-shadow: 2.5px 4px;
+  }
+
+  .feedNow{
+    background-color: yellow; /* Green */
+    border: none;
+    color: black;
+    padding: 40px 8px;
+    text-align: center; 
+    font-weight: bold;
+    text-decoration: black;
+    display: inline-block;
+    font-size: 24px;
+    text-shadow: black;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 70px;
+    box-shadow: 2.5px 4px;
+  }
+
+  .feedTime{
+    background-color: yellow; /* Green */
+    border: none;
+    color: black;
+    padding: 30px 8px;
+    font-weight: bold;
+    text-decoration: black;
+    display: inline-block;
+    font-size: 24px;
+    text-shadow: black;
+    display: inline-block;
+    box-shadow: 2.5px 4px;
+  }

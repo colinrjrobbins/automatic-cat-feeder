@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>
+            Main Page
+        </title>
+        <link rel="stylesheet" type="text/css" href="../static/mainStyle.css">
+        <body>
+            <div class="boxes">
+                <form action="{{ url_for('feedTime') }}" method="POST">
+                    <button class="foodLevel" disabled>{{foodValue}}% Food <br>Remaining</button>
+                    <input style="position:relative; right: 200px; top: 80px;" type="text" name="cat" placeholder="Enter Cat Name:">
+                    <button type="submit" class="catName" disabled>Cat Name:<br>{{cat_name}}</button>
+                    <button class="Time" disabled>Feed Time: <br>{{feedTime}}</button>
+                    <button class="feedNow" id="feedNow">BUTTON: <br>Feed Now</button>
+                    <button type="submit" class="feedTime" id = "feedTime">BUTTON: <br>Change Feed Time/<br>Cat Name</button>
+                    <input type="text" name="time" placeholder="Enter Time (HH:mm):">
+                </form>
+            </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+
+    <script type=text/javascript> $(function() { $("#feedNow").click(function (event) { $.getJSON('/feedNow', { },
+    function(data) { }); return false; }); }); </script>
+        </body>
+    </head>
+</html>
